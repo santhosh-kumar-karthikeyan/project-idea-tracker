@@ -4,4 +4,23 @@
     justify-content: flex-start;
     gap: 30px;
     align-items: center;
+    box-shadow: 5px 10px 8px #888888;
+    border-radius: 2.5px;
+    border-color: #000;
+    border-width: 100px;
+}
+
+.finished {
+    margin-top: 5.75px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main > img {
+    border-radius: 2.5px;
+    height : auto;
+    max-width: 100%;
+    
 }
