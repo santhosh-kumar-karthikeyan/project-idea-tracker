@@ -1,8 +1,10 @@
-main {
+article {
+    margin-top: 20px;
     width: 100%;
     display: flex;
+    flex-direction: column;
+    gap: 30px;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
 }
 

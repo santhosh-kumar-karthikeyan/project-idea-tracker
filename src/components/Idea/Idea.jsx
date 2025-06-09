@@ -1,15 +1,15 @@
 import "./Idea.css";
 
-function Idea() {
+function Idea({ideaImg, ideaTitle, ideaDomain, ideaDescription, ideaStartDate, ideaEndDate}) {
     return (
         <main className="idea-container">
-            <img src="https://picsum.photos/seed/picsum/200/300" alt="Idea image" />
+            <img src={ideaImg} alt="Idea image" />
             <section>
-                <small id='idea-domain'>Web development</small>
-                <h3 id="idea-title">DSA Visualiser</h3>
-                <p id="idea-description">A GUI based DSA visualiser that can be used to visualise operations with common Data Structures and working of common algorithms. </p>
+                <small id='idea-domain'>{ideaDomain}</small>
+                <h3 id="idea-title">{ideaTitle}</h3>
+                <p id="idea-description">{ideaDescription}</p>
                 <section id="idea-period">
-                    <small>Start date: </small>
+                    <small>{ideaStartDate}</small> - <small>{ideaEndDate}</small>
                 </section>
             </section>
         </main>
